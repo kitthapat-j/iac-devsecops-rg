@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg" {
 } 
 
 resource "azurerm_network_security_group" "example_nsg" {
-    name                = "iac-devops-nsg-99"
+    name                = "iac-devops-nsg-909"
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
 }
