@@ -18,7 +18,7 @@ resource "azurerm_network_security_rule" "insecure_ssh" {
     protocol                    = "Tcp"
     source_port_range           = "*"
     destination_port_range      = "22"
-    source_address_prefix       = "*"
+    source_address_prefix       = "10.0.0.4/32"
     destination_address_prefix  = "*"
     network_security_group_name = azurerm_network_security_group.example_nsg.name
     resource_group_name         = azurerm_resource_group.rg.name
